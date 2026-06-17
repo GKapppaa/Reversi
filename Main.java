@@ -3,11 +3,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-        
+
         Tablero tablero = new Tablero();    
         Scanner datos = new Scanner(System.in);
 
-        // ANOmbre del jugador 1
+        // NOmbre del jugador 1
         System.out.println("Nombre del jugador 1: ");
         String nombreJ1 = datos.nextLine();
         while (nombreJ1.trim().isEmpty()) {
