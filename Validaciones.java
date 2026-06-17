@@ -36,9 +36,9 @@ public class Validaciones {
                 c += colDir[d];
             }
         }
-
         return capturas;
     }
+    
     public boolean tieneMovimientosValidos(Tablero tablero){
         for (int i = 0; i < tablero.tablero.length; i++) {
             for (int j = 0; j < tablero.tablero.length; j++) {
