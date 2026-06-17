@@ -18,6 +18,7 @@ public class Main {
 
         Turnos turnos = new Turnos(nombreJ1, nombreJ2, colorJ1, colorJ1, colorJ1);
         Validaciones validaciones = new Validaciones();
+        
         while (true){
             tablero.mostrarTablero();
 
@@ -36,7 +37,6 @@ public class Main {
                 continue;
             }
         
-    
             if(validaciones.esMovValido(tablero, fila, columna, turnos.obtenerColorActual())){
                 ArrayList<int[]> capturas = validaciones.obtenerCapturas(tablero, fila, columna, turnos.obtenerColorActual());
 

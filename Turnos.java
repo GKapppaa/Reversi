@@ -5,7 +5,6 @@ public class Turnos {
     Piezas colorJ2;
     Piezas turnoActual;
     
-
     public Turnos(String nombreJ1, String nombreJ2, Piezas colorJ1, Piezas colorJ2, Piezas turnoActual) {
         this.nombreJ1 = nombreJ1;
         this.nombreJ2 = nombreJ2;
@@ -22,6 +21,7 @@ public class Turnos {
     public Piezas obtenerColorActual(){
         return turnoActual;
     }
+    
     public String obtenerJugadorActual(){
         if(turnoActual == colorJ1){
             return nombreJ1;
@@ -71,6 +71,4 @@ public class Turnos {
             System.out.println("Ganador: " + ganador + "(Blancas)");
         }
     }
-
-
 }
